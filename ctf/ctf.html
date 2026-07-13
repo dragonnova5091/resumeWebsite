@@ -1,0 +1,33 @@
+<div>
+    <label>Password</label>
+    <span>
+        <input type="text" id="password">
+        <button type="button" onclick="ShowText()">Go!</button>
+    </span>
+</div>
+<div>
+    <p id="textbox"></p>
+</div>
+
+<script>
+    function ShowText()
+    {
+        var input = document.getElementById("password");
+        if (input.value === "MyMotivation")
+        {
+            document.getElementById('textbox').innerHTML = "I like solving difficult puzzles, and coding provides that for me. I always fear that I will end up bored and exhausted, so I seek out more and more difficult tasks. I enjoy C and multithreading because it is difficult, and I hope that a job can provide that mental challenge that I look for. That is my motivation.";
+        }
+	else if (input.value === "HireMe")
+	{
+	    document.getElementById('textbox').innerHTML = "My credentials may be good, but it takes something else to stand out from the crowd: www.youtube.com/watch?v=dQw4w9WgXcQ";
+	}
+	else if (input.value === "SecretValue")
+	{
+	    document.getElementById('textbox').innerHTML = "Aren't you the smart cookie. Check back later, and I may have added more puzzles";
+	}
+        else 
+        {
+            document.getElementById('textbox').innerHTML = "";
+        }
+    }
+</script>
